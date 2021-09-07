@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>備忘錄</h1>
+        <div class="task_edit">
+            <ul>
+                <li>
+                    <p>記事</p><input id="content" type="text" placeholder="Type Something Here">
+                </li>
+                <li>
+                    <p>日期</p><input id="date" type="date" value="2021-09-07">
+                </li>
+                <li>
+                    <p>時間</p><input id="time" type="time" value="00:00">
+                </li>
+            </ul>
+            <button class="add_btn" id="add">新增</button>
+            <button class="del_btn" id="del">刪除最後一項</button>
+            <div class="task_list" id="list">
+                <div class="content">
+                    <p>內容:</p>
+                    <p>時間:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./note.js"></script>
+</body>
+
+</html>
